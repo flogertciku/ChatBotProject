@@ -1,0 +1,67 @@
+<body id="content" class="show-chatbot">
+    <button class="chatbot-toggler">
+        <span class="fa fa-comments-o" style="font-size:24px" onclick="openchat()"></span>
+        <span class="fa fa-close" style="font-size:24px" onclick="closechat()"></span>
+    </button>
+    <div class="chatbot">
+        <header class="main-header">
+            <div>
+                <h2>Help</h2>
+            </div>
+            <div class="logo">
+                <img src="/ChatBotProject/img/duaLogo.png" alt="logo" width="37px">
+            </div>
+            
+            <div class="chatbot__menu" onclick="closechat()">
+                <i class="fa fa-close" style="font-size:24px"></i>
+                </svg>
+            </div>
+        </header>
+        <div class="padding">
+            <div class="helpcontainer">
+                <div class="search">
+                    <input id="searchInput" placeholder="Search..." type="text" onkeyup="searchFAQ()">
+                    <button type="submit">Go</button>
+                </div>
+                <div class="faq">
+                    <button class="faqbtn" data-content="Intercom Overview">
+                        Intercom Overview
+                        <div class="arrow-wrapper">
+                            <div class="arrow"></div>
+                        </div>
+                    </button>
+                    <button class="faqbtn" data-content="Getting Started">
+                        Getting Started
+                        <div class="arrow-wrapper">
+                            <div class="arrow"></div>
+                        </div>
+                    </button>
+                    <button class="faqbtn" data-content="Help Desk">
+                        Help Desk
+                        <div class="arrow-wrapper">
+                            <div class="arrow"></div>
+                        </div>
+                    </button>
+                    <button class="faqbtn" data-content="AI Chatbot">
+                        AI Chatbot
+                        <div class="arrow-wrapper">
+                            <div class="arrow"></div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="button-container">
+                <button class="button" onclick="loadPage('index.html')">
+                    <i class="fa fa-home" style="font-size:24px"></i>
+                </button>
+                <button class="button" onclick="loadPage('chat.html')">
+                    <i class="fa fa-commenting-o" style="font-size:24px"></i>
+                </button>
+                <button class="button" onclick="loadPage('help.html')">
+                    <i class="fa fa-question-circle-o" style="font-size:24px"></i>
+                </button>
+            </div>
+        </footer>
+    </div>

@@ -1,0 +1,71 @@
+<body id="content" class="show-chatbot">
+    <button class="chatbot-toggler">
+        <span class="fa fa-comments-o" style="font-size:24px" onclick="openchat()"></span>
+        <span class="fa fa-close" style="font-size:24px"onclick="closechat()"></span>
+    </button>
+    <div class="chatbot">
+        <header class="main-header">
+            <div>
+                <h2>Message</h2>
+            </div>
+            <div class="logo">
+                <img src="/ChatBotProject/img/duaLogo.png" alt="logo" width="37px">
+            </div>
+            
+            <div class="chatbot__menu" onclick="closechat()">
+                <i class="fa fa-close" style="font-size:24px"></i>
+                </svg>
+            </div>
+        </header>
+        <div class="padding">
+            <div class="msgcontenier shadow">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="chat_container">
+                                <div class="job-box">
+                                    <div class="inbox-message">
+                                        <ul id="conversations">
+                                            <li class="chats" onclick="loadPage('chatbot.html')">
+                                                <a href="#">
+                                                    <div class="message-avatar">
+                                                        <img src="/ChatBotProject/img/bot.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="message-body">
+                                                        <div class="message-body-heading"   >
+                                                            <h5>Chat Bot <span class="unread">Online</span></h5>
+                                                            <span>Now</span>
+                                                        </div>
+                                                        <p>Hello,</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="button" id="newMessage" onclick="openChatWindow()">
+            <i class="fa fa-envelope-o" style="font-size:24px"></i>
+            Send us a message
+        </button>
+        <footer>
+            <div class="button-container">
+                <button class="button" onclick="loadPage('index.html')">
+                    <i class="fa fa-home" style="font-size:24px"></i>
+                </button>
+                <button class="button" onclick="loadPage('chat.html')">
+                    <i class="fa fa-commenting-o" style="font-size:24px"></i>
+                </button>
+                <button class="button" onclick="loadPage('help.html')">
+                    <i class="fa fa-question-circle-o" style="font-size:24px"></i>
+                </button>
+            </div>
+        </footer>
+    </div>
+</body>

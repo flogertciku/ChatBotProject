@@ -1,0 +1,26 @@
+<body id="content" class="show-chatbot">
+<button class="chatbot-toggler">
+    <span class="fa fa-comments-o" style="font-size:24px" onclick="openchat()"></span>
+    <span class="fa fa-close" style="font-size:24px"onclick="closechat()"></span>
+</button>
+<div class="chatbot">
+    <header class="chat-window">
+        <i class="fa fa-arrow-left" id="back-to-chat" aria-hidden="true" onclick="loadPage('chat.html')"></i>
+        <h2>Name</h2>
+        <span></span>
+    </header>
+    <ul class="chatbox">
+        <li class="chat incoming">
+            <img src="/ChatBotProject/img/chatbot.png" alt="chatbot">
+            <p>Hi there <br> How can i help you today</p>
+        </li>
+        <li class="chat outgoing" id="outgoing">
+            
+        </li>
+    </ul>
+    <div class="chat-input">
+        <textarea id="inputText" placeholder="Enter a Message" required></textarea>
+        <span id="dergo" class="material-icons" style="font-size:36px" onclick="callFunction()">send</span>
+    </div>
+</div>
+</body>
